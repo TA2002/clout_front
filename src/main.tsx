@@ -1,14 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+
 import App from "./App.tsx";
-import Header from "./components/Header";
 import "./index.css";
 import { ThemeProvider } from "./components/ThemeProvider.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ThemeProvider defaultTheme="dark" storageKey="sample-project-ui-theme">
-      <Header />
+    <ThemeProvider defaultTheme="light" storageKey="sample-project-ui-theme">
       <App />
     </ThemeProvider>
   </React.StrictMode>

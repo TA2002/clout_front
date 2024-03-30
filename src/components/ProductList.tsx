@@ -1,19 +1,20 @@
-import { Product } from "@/types";
 import ProductCard from "./ui/ProductCard";
+import { Influencer } from "@/features/main/types";
 
-interface ProductListProps {
-  items: Product[];
+interface InfluencerListProps {
+  items: Influencer[];
 }
-const ProductList = ({ items }: ProductListProps) => {
+const InfluencerList = ({ items }: InfluencerListProps) => {
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {items.map((item) => (
-          <ProductCard key={item.id} data={item} />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+        {/* toReversed() */}
+        {items.map((item, index) => (
+          <ProductCard key={index} data={item} />
         ))}
       </div>
     </div>
   );
 };
 
-export default ProductList;
+export default InfluencerList;
