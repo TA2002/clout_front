@@ -35,37 +35,10 @@ const schema = z.object({
 });
 
 export const DetailsTab = ({ onSuccess }: DetailsTabProps) => {
-  // const schema = z.object({
-  //   cloutname: z
-  //     .string()
-  //     .min(2, {
-  //       message: "Username must be at least 2 characters.",
-  //     })
-  //     .max(30, {
-  //       message: "Username must not be longer than 30 characters.",
-  //     }),
-  //   display_name: z
-  //     .string()
-  //     .min(2, {
-  //       message: "Display name must be at least 2 characters.",
-  //     })
-  //     .max(60, {
-  //       message: "Display name must not be longer than 30 characters.",
-  //     }),
-  //   about: z
-  //     .string()
-  //     .min(30, {
-  //       message: "Bio name must be at least 30 characters.",
-  //     })
-  //     .max(1000, {
-  //       message: "Bio must not be longer than 1000 characters.",
-  //     }),
-  //   tags: z.string().optional(),
-  // });
+  const { toast } = useToast();
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const { mediakitInfo, getMediakitInfo } = useContext(AuthContext);
-  const { toast } = useToast();
   const { t } = useTranslation();
 
   // Define your form with useForm
@@ -149,15 +122,6 @@ export const DetailsTab = ({ onSuccess }: DetailsTabProps) => {
       }
     }
   }, [mediakitInfo, form, t]);
-
-  // let selectedTags: { label: string; value: string }[];
-  // if (mediakitInfo?.tags && mediakitInfo?.tags?.length > 0) {
-  //   selectedTags = nicheOptions.filter(
-  //     (item) => mediakitInfo.tags?.split(",").includes(item.value)
-  //   );
-  // } else {
-  //   selectedTags = [];
-  // }
 
   return (
     <Form {...form}>

@@ -56,7 +56,7 @@
 
   "platformNumberOne": "#1 Платформа для работы с блогерами и инфлюенсерами",
   "influencersForYourBusiness": "БЛОГЕРЫ ДЛЯ ВАШЕГО БИЗНЕСА",
-  "accelerateBusinessGrowth": "10000+ микро и нано инфлюенсеров с аудиторией под любой запрос",
+  "accelerateBusinessGrowth": "10000+ микро и нано инфлюенсеров для малого и среднего бизнеса",
   "bloggerList": "Список Блогеров",
   "contactUs": "Связаться с нами",
   "maximumTransparency": "Максимальная прозрачность",
@@ -70,7 +70,7 @@
   "viewAll": "Смотреть все",
 
   "leaveRequest": "Оставить заявку",
-  "forBrand": "Для Бизнеса",
+  "forBrand": "Оставить заявку",
   "forCreators": "Для Блогеров",
 
   "platformForInfluencers": "#1 Платформа для работы с блогерами и инфлюенсерами",
@@ -104,6 +104,7 @@
   "editYourPage": "Редактировать вашу страницу",
   "viewProfile": "Просмотреть профиль",
   "images": "Изображения",
+  "prices": "Пакеты",
 
   "disconnect": "Отключить",
   "successfulDisconnection": "Успешное отключение",

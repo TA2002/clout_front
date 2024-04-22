@@ -8,6 +8,7 @@ export const SettingsRoutes = () => {
       <Route path="" element={<Settings />} />
       <Route path="/accounts" element={<Settings />} />
       <Route path="/images" element={<Settings />} />
+      <Route path="/prices" element={<Settings />} />
     </Routes>
   );
 };

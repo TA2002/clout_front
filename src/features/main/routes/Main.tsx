@@ -6,7 +6,8 @@ import landing from "@/assets/influencers/landing.png";
 import landingg from "@/assets/influencers/landingg.png";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
-
+import InfluencerList from "@/components/ProductList";
+import { Label } from "@/components/ui/label";
 import transparency from "@/assets/values/transparency.svg";
 import quality from "@/assets/values/quality.svg";
 import range from "@/assets/values/range.svg";
@@ -77,7 +78,7 @@ export const Main = () => {
                       >
                         {t("forBrand")}
                       </Button>
-                      <Button
+                      {/* <Button
                         size="lg"
                         variant="secondary"
                         className="text-sm sm:text-lg border"
@@ -87,7 +88,7 @@ export const Main = () => {
                         }}
                       >
                         {t("forCreators")}
-                      </Button>
+                      </Button> */}
                     </div>
                   </div>
                   <img
@@ -98,7 +99,7 @@ export const Main = () => {
                   <img
                     src={landingg}
                     alt="blogger"
-                    className="block sm:hidden px-4 sm:px-6 lg:px-8 mt-0 w-full aspect-square lg:h-96 lg:w-4/6 relative  object-scale-down block lg:mx-auto"
+                    className="sm:hidden px-4 sm:px-6 lg:px-8 mt-0 w-full aspect-square lg:h-96 lg:w-4/6 relative  object-scale-down block lg:mx-auto"
                   />
                 </div>
               </div>
@@ -127,7 +128,8 @@ export const Main = () => {
                     <p className="text-gray-500">{t("safetyDescription")}</p>
                   </div>
                 </div>
-                {/* <div className="my-10" ref={influencerListRef}>
+                {/* ref={influencerListRef} */}
+                {/* <div className="my-10">
                   <div className="flex flex-col gap-2 mb-6">
                     <p className="text-xl font-medium">{t("inTrend")}</p>
                     <div className="flex flex-row w-full justify-between">
@@ -141,7 +143,7 @@ export const Main = () => {
                 </div> */}
                 {/* <TableDemo residents={influencers.data} /> */}
               </div>
-              <div className="px-4 sm:px-6 lg:px-8">
+              <div className="px-4 sm:px-6 lg:px-8 text-center">
                 <div className="w-full bg-primary p-14 rounded-xl flex flex-col items-center gap-10">
                   <p className="text-4xl text-white font-bold">
                     ГОТОВЫ НАВЕСТИ ШУМ?

@@ -14,9 +14,10 @@ interface SidebarNavProps extends React.HTMLAttributes<HTMLElement> {
 export function SidebarNav({ className, items, ...props }: SidebarNavProps) {
   const path = window.location.pathname;
   return (
+    // <div className="w-full flex flex-row overflow-x-scroll snap-x snap-mandatory gap-10 pt-3"></div>
     <nav
       className={cn(
-        "flex space-x-2 ",
+        "flex space-x-2 w-full flex-row overflow-x-scroll snap-x snap-mandatory scrollbar-hide",
         // lg:flex-col lg:space-x-0 lg:space-y-1
         className
       )}

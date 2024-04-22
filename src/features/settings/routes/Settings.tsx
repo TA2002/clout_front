@@ -3,6 +3,7 @@ import Container from "@/components/ui/container";
 import { DetailsTab } from "../components/tabs/DetailsTab";
 import { AccountsTab } from "../components/tabs/AccountsTab";
 import { ImagesTab } from "../components/tabs/ImagesTab";
+import { PricesTab } from "../components/tabs/PricesTab";
 
 export const Settings = () => {
   const pathname = window.location.pathname;
@@ -22,6 +23,8 @@ export const Settings = () => {
             <DetailsTab onSuccess={() => {}} />
           ) : pathname == "/settings/accounts" ? (
             <AccountsTab />
+          ) : pathname == "/settings/prices" ? (
+            <PricesTab onSuccess={() => {}} />
           ) : (
             <ImagesTab />
           )}

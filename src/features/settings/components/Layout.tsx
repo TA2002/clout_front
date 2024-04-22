@@ -21,6 +21,7 @@ const sidebarNavItems = [
     href: "/settings/accounts",
   },
   { title: "images", href: "/settings/images" },
+  { title: "prices", href: "/settings/prices" },
 ];
 
 interface LayoutProps {
@@ -35,7 +36,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <div className="space-y-6 p-10 pb-16 md:block ">
-        <div className="flex flex-row items-center justify-between">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
           <h2 className="text-2xl font-bold tracking-tight">
             {t("editYourPage")}
           </h2>

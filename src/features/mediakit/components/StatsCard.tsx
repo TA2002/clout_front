@@ -5,11 +5,16 @@ import {
   // CardDescription,
   CardHeader,
   CardTitle,
+  CardFooter,
 } from "@/components/ui/card";
 import { HorizontalChart } from "@/components/charts/HorizontalChart";
 import Chart from "react-apexcharts";
 import { chartOptionsForDonut } from "@/components/charts/chartOptionsForDonut";
 import { useTranslation } from "react-i18next";
+import instagram from "@/assets/platforms/instagram.png";
+import tiktok from "@/assets/platforms/tiktok.png";
+import youtube from "@/assets/platforms/youtube.png";
+import telegram from "@/assets/platforms/telegram.png";
 
 interface StatsCardProps {
   statsName: string;
@@ -109,6 +114,9 @@ export const StatsCard: React.FC<StatsCardProps> = ({
         {/* {statsIcon} */}
       </CardHeader>
       <CardContent>{node}</CardContent>
+      {/* <CardFooter>
+        <img src={instagram} className="w-8 h-8"></img>
+      </CardFooter> */}
     </Card>
   );
 };
